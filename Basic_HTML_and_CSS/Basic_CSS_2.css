@@ -1,0 +1,12 @@
+p {
+	color: LightCyan;
+	background-color: DarkCyan;
+	font-size: 19px;
+	text-align: center;
+}
+.shadow {
+	size: 19px;
+	color: Black;
+	Background-color: white;
+	text-shadow: 2px 2px 2px DarkRed;
+}
