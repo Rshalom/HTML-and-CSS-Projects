@@ -4,6 +4,7 @@
 		<title>My Sweet Tooth</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<script src="./JS/one_page_website.js" defer></script>
 	</head>
 	<body>
 		
@@ -19,68 +20,73 @@
 		
 		<!-- HOME -->
 			<div id="home">
-				<h2>Hi there!</h2><br>
-				<h3>Welcome to My Sweet Tooth!</h3><br>
-				<p>Here you will find a selection of beautiful and delecious confections, personalized for all your occasions. Come explore my work and order your own desserts today!</p><br>
-				<h4>Let's satisfy YOUR sweet tooth!</h4>
+				<h1>Hi there!</h1><br>
+				<h2>Welcome to My Sweet Tooth!</h2><br>
+				<h3>Here you will find a selection of beautiful and delecious confections, personalized for all your occasions. Come explore my work and order your own desserts today!</h3><br>
+				<h2>Let's satisfy YOUR sweet tooth!</h2>
 			</div>
 		<!-- END HOME -->
+		<br>
+		<br>
 		
 		<!-- GALLERY -->
+		<h2>Here are some of my creations!</h2>
+		<br>
+
 			<div id="gallery">
-				<h2>Here are some of my creations!</h2>
+				
 					
 				<!-- IMAGE CONTAINER 1 -->
 				<div>
-					<img width="400" height="350" src="./images/thumb/thumbnail_1.avif" alt="">
+					<img class="dessert" width="400" height="350" src="./images/thumb/thumbnail_1.avif" alt="">
 				</div>
 				<!-- END OF CONATINER 1 -->
 			
 				<!-- IMAGE CONTAINER 2 -->
 				<div>
-					<img width="400" height="350" src="./images/thumb/thumbnail_2.avif" alt="">
+					<img class="dessert" width="400" height="350" src="./images/thumb/thumbnail_2.avif" alt="">
 				</div>
 				<!-- END OF CONATINER 2 -->
 			
 				<!-- IMAGE CONTAINER 3 -->
 				<div>
-					<img width="400" height="350" src="./images/thumb/thumbnail_3.avif" alt="">
+					<img class="dessert" width="400" height="350" src="./images/thumb/thumbnail_3.avif" alt="">
 				</div>
 				<!-- END OF CONATINER 3 -->
 			
 				<!-- IMAGE CONTAINER 4 -->
 				<div>
-					<img width="400" height="350" src="./images/thumb/thumbnail_4.avif" alt="">
+					<img class="dessert" width="400" height="350" src="./images/thumb/thumbnail_4.avif" alt="">
 				</div>
 				<!-- END OF CONATINER 4 -->
 			
 				<!-- IMAGE CONTAINER 5 -->
 				<div>
-					<img width="400" height="350" src="./images/thumb/thumbnail_5.avif" alt="">
+					<img class="dessert" width="400" height="350" src="./images/thumb/thumbnail_5.avif" alt="">
 				</div>
 				<!-- END OF CONATINER 5 -->
 			
 				<!-- IMAGE CONTAINER 6 -->
 				<div>
-					<img width="400" height="350" src="./images/thumb/thumbnail_6.avif" alt="">
+					<img class="dessert" width="400" height="350" src="./images/thumb/thumbnail_6.avif" alt="">
 				</div>
 				<!-- END OF CONATINER 6 -->
 			
 				<!-- IMAGE CONTAINER 7 -->
 				<div>
-					<img width="400" height="350" src="./images/thumb/thumbnail_7.avif" alt="">
+					<img class="dessert" width="400" height="350" src="./images/thumb/thumbnail_7.avif" alt="">
 				</div>
 				<!-- END OF CONATINER 7 -->
 			
 				<!-- IMAGE CONTAINER 8 -->
 				<div>
-					<img width="400" height="350" src="./images/thumb/thumbnail_8.avif" alt="">
+					<img class="dessert" width="400" height="350" src="./images/thumb/thumbnail_8.avif" alt="">
 				</div>
 				<!-- END OF CONATINER 8 -->
 			
 				<!-- IMAGE CONTAINER 9 -->
 				<div>
-					<img width="400" height="350" src="./images/thumb/thumbnail_9.avif" alt="">
+					<img class="dessert" width="400" height="350" src="./images/thumb/thumbnail_9.avif" alt="">
 				</div>
 				<!-- END OF CONATINER 9 -->
 			</div>
@@ -91,7 +97,76 @@
 			<h2>And here's how its all done!</h2>
 			<div>
 				<iframe width="767" height="431" src="https://www.youtube.com/embed/2rOcCug6heU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
+			</div>
+		</div>
+
+
+		<!-- Images used to open lightbox -->
+		<h3>Here is a little slideshow of some of my favorite types of flowers:</h3>
+		<div class="row">
+			<div class="column">
+				<img class="small" src="./images/plants/plant1-small.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="">
+			</div>
+			<div class="column">
+				<img class="small" src="./images/plants/plant2-small.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="">
+			</div>
+			<div class="column">
+				<img class="small" src="./images/plants/plant3-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="">
+			</div>
+			<div class="column">
+				<img class="small" src="./images/plants/plant4-small.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="">
+			</div>
+		</div>
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="./images/plants/plant1.png" style="width:100%" alt="">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="./images/plants/plant2.png" style="width:100%" alt="">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="./images/plants/plant3.png" style="width:100%" alt="">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="./images/plants/plant4.png" style="width:100%" alt="">
+				</div>
+
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+				<a class="next" onclick="plusSlides(1)">&#10095</a>
+
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="./images/plants/plant1-small.png" onclick="currentSlide(1)" alt="Cherry Blossoms">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/plants/plant2-small.png" onclick="currentSlide(2)" alt="Sunflowers">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/plants/plant3-small.png" onclick="currentSlide(3)" alt="Cactus Flower">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/plants/plant4-small.png" onclick="currentSlide(4)" alt="Hydrangeas">
+				</div>
+			</div>
+		</div>
 		<!-- CONTACT -->
 			<div id="contact">
 				<h2>Order your personalized desserts today!</h2><br>
